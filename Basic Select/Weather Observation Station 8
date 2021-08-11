@@ -1,0 +1,5 @@
+/* https://www.hackerrank.com/challenges/weather-observation-station-8/problem */
+SElECT DISTINCT CITY 
+FROM STATION
+WHERE LOWER(SUBSTR(city,-1,1)) in ('a','e','i','o','u')
+AND LOWER(SUBSTR(city,1,1)) in ('a','e','i','o','u')
